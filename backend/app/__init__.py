@@ -67,6 +67,11 @@ def create_app(config_class=Config):
     app.register_blueprint(graph_bp, url_prefix='/api/graph')
     app.register_blueprint(simulation_bp, url_prefix='/api/simulation')
     app.register_blueprint(report_bp, url_prefix='/api/report')
+
+    # FutureSim 实验管理（成员 C，独立模块，不影响 MiroFish 核心逻辑）
+    from futuresim_gateway import futuresim_bp, register_error_handlers
+    app.register_blueprint(futuresim_bp, url_prefix='/api/v1')
+    register_error_handlers(app)
     
     # 健康检查
     @app.route('/health')

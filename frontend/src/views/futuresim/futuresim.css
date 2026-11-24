@@ -1,0 +1,602 @@
+/* ============================================================
+   FutureSim 设计系统 —— 「预测观测台」
+   方向：工业实用 / 观测终端。深墨蓝夜空基底，电青 = 观测数据，
+   琥珀 = 唯一行动强调色，绿 / 红 = 上行 / 下行语义。
+   记忆点：cutoff 分界线 —— 观测历史与未知未来的视觉边界。
+   本文件由 FutureSimLayout 以非 scoped 方式全局引入一次，
+   所有类名以 fs- 前缀隔离，不影响 MiroFish 原有页面。
+   ============================================================ */
+
+:root {
+  /* —— 色彩令牌 —— */
+  --fs-bg: #070b12;
+  --fs-bg-2: #0b111c;
+  --fs-surface: #0e1522;
+  --fs-surface-2: #131c2e;
+  --fs-overlay: #182338;
+  --fs-line: rgba(126, 164, 219, 0.14);
+  --fs-line-strong: rgba(126, 164, 219, 0.3);
+  --fs-text: #e9eef7;
+  --fs-muted: #94a2b9;
+  --fs-faint: #5f6d84;
+  --fs-cyan: #45d6e8;
+  --fs-cyan-soft: rgba(69, 214, 232, 0.12);
+  --fs-amber: #ffb224;
+  --fs-amber-soft: rgba(255, 178, 36, 0.12);
+  --fs-green: #43dd9a;
+  --fs-green-soft: rgba(67, 221, 154, 0.12);
+  --fs-red: #ff6b6b;
+  --fs-red-soft: rgba(255, 107, 107, 0.12);
+  --fs-violet: #9d8cff;
+  --fs-violet-soft: rgba(157, 140, 255, 0.12);
+  --fs-blue: #5b9dff;
+
+  /* —— 字体 —— */
+  --fs-display: 'Chakra Petch', 'Noto Sans SC', sans-serif;
+  --fs-body: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --fs-mono: 'JetBrains Mono', 'Noto Sans SC', monospace;
+
+  /* —— 字阶（1.25 模块化） —— */
+  --fs-t11: 11px;
+  --fs-t12: 12px;
+  --fs-t13: 13px;
+  --fs-t14: 14px;
+  --fs-t16: 16px;
+  --fs-t20: 20px;
+  --fs-t26: 26px;
+  --fs-t34: 34px;
+  --fs-t46: 46px;
+
+  /* —— 间距 / 圆角 / 阴影 —— */
+  --fs-s1: 4px;
+  --fs-s2: 8px;
+  --fs-s3: 16px;
+  --fs-s4: 24px;
+  --fs-s5: 40px;
+  --fs-s6: 64px;
+  --fs-r-sm: 3px;
+  --fs-r-md: 6px;
+  --fs-r-lg: 10px;
+  --fs-sh1: 0 2px 8px rgba(2, 6, 14, 0.5);
+  --fs-sh2: 0 8px 28px rgba(2, 6, 14, 0.55);
+  --fs-sh3: 0 24px 64px rgba(2, 6, 14, 0.65);
+
+  /* —— 动效 —— */
+  --fs-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --fs-fast: 160ms;
+  --fs-base: 320ms;
+  --fs-slow: 640ms;
+}
+
+/* —— 基础 —— */
+.fs-shell {
+  font-family: var(--fs-body);
+  font-size: var(--fs-t14);
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: var(--fs-text);
+  background: var(--fs-bg);
+  font-variant-numeric: tabular-nums;
+}
+.fs-shell ::selection {
+  background: rgba(69, 214, 232, 0.28);
+  color: #ffffff;
+}
+.fs-shell :focus-visible {
+  outline: 2px solid var(--fs-cyan);
+  outline-offset: 2px;
+  border-radius: var(--fs-r-sm);
+}
+.fs-shell a {
+  color: var(--fs-cyan);
+  text-decoration: none;
+  transition: color var(--fs-fast) ease-out;
+}
+.fs-shell a:hover {
+  color: #8ce7f2;
+}
+
+/* 滚动条 —— 观测台自己的视觉语言 */
+.fs-shell * {
+  scrollbar-width: thin;
+  scrollbar-color: #24344e var(--fs-bg-2);
+}
+.fs-shell ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.fs-shell ::-webkit-scrollbar-track {
+  background: var(--fs-bg-2);
+}
+.fs-shell ::-webkit-scrollbar-thumb {
+  background: #24344e;
+  border: 2px solid var(--fs-bg-2);
+  border-radius: 6px;
+}
+.fs-shell ::-webkit-scrollbar-thumb:hover {
+  background: #35507a;
+}
+
+/* —— 页面入场序列（3–6 组，间隔 80ms） —— */
+.fs-page > * {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: fs-rise var(--fs-slow) var(--fs-ease) forwards;
+}
+.fs-page > *:nth-child(1) { animation-delay: 0ms; }
+.fs-page > *:nth-child(2) { animation-delay: 80ms; }
+.fs-page > *:nth-child(3) { animation-delay: 160ms; }
+.fs-page > *:nth-child(4) { animation-delay: 240ms; }
+.fs-page > *:nth-child(5) { animation-delay: 320ms; }
+.fs-page > *:nth-child(6) { animation-delay: 400ms; }
+.fs-page > *:nth-child(n + 7) { animation-delay: 480ms; }
+@keyframes fs-rise {
+  to { opacity: 1; transform: none; }
+}
+
+/* —— 标题体系 —— */
+.fs-eyebrow {
+  font-family: var(--fs-mono);
+  font-size: var(--fs-t11);
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--fs-cyan);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.fs-eyebrow::before {
+  content: '';
+  width: 22px;
+  height: 1px;
+  background: var(--fs-cyan);
+  box-shadow: 0 0 8px var(--fs-cyan);
+}
+.fs-title {
+  font-family: var(--fs-display);
+  font-size: var(--fs-t34);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  color: var(--fs-text);
+  margin: 0 0 10px;
+}
+.fs-sub {
+  font-size: var(--fs-t13);
+  color: var(--fs-muted);
+  line-height: 1.8;
+  margin: 0 0 var(--fs-s4);
+  max-width: 72ch;
+}
+
+/* —— 面板（四角刻度 = 仪器面板语言） —— */
+.fs-card {
+  position: relative;
+  background: linear-gradient(180deg, var(--fs-surface-2), var(--fs-surface) 120px);
+  border: 1px solid var(--fs-line);
+  border-radius: var(--fs-r-md);
+  padding: var(--fs-s4);
+  margin-bottom: var(--fs-s3);
+  box-shadow: var(--fs-sh1);
+}
+.fs-card::before,
+.fs-card::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+}
+.fs-card::before {
+  top: -1px;
+  left: -1px;
+  border-top: 1px solid var(--fs-line-strong);
+  border-left: 1px solid var(--fs-line-strong);
+}
+.fs-card::after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 1px solid var(--fs-line-strong);
+  border-right: 1px solid var(--fs-line-strong);
+}
+.fs-card h2 {
+  font-family: var(--fs-display);
+  font-size: var(--fs-t16);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--fs-text);
+  margin: 0 0 var(--fs-s3);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.fs-card h2 .fs-tag {
+  font-family: var(--fs-mono);
+  font-size: var(--fs-t11);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--fs-muted);
+  border: 1px solid var(--fs-line);
+  border-radius: var(--fs-r-sm);
+  padding: 2px 8px;
+}
+
+/* —— 表格 —— */
+.fs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-t13);
+}
+.fs-table th {
+  font-family: var(--fs-mono);
+  font-size: var(--fs-t11);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fs-faint);
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--fs-line-strong);
+  white-space: nowrap;
+}
+.fs-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--fs-line);
+  color: var(--fs-text);
+  vertical-align: middle;
+}
+.fs-table tbody tr {
+  transition: background var(--fs-fast) ease-out;
+}
+.fs-table tbody tr:hover {
+  background: rgba(69, 214, 232, 0.045);
+}
+.fs-table a {
+  color: var(--fs-cyan);
+  white-space: nowrap;
+}
+
+/* —— 按钮（琥珀 = 关键动作） —— */
+.fs-btn {
+  font-family: var(--fs-display);
+  font-size: var(--fs-t13);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  min-height: 44px;
+  padding: 10px 24px;
+  border: 1px solid var(--fs-amber);
+  border-radius: var(--fs-r-sm);
+  background: var(--fs-amber);
+  color: #14100a;
+  cursor: pointer;
+  transition: transform var(--fs-fast) ease-out, box-shadow var(--fs-fast) ease-out,
+    background var(--fs-fast) ease-out;
+}
+.fs-btn:hover:not(:disabled) {
+  background: #ffc44f;
+  box-shadow: 0 0 0 1px rgba(255, 178, 36, 0.4), 0 4px 20px rgba(255, 178, 36, 0.25);
+  transform: translateY(-1px);
+}
+.fs-btn:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: none;
+}
+.fs-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.fs-btn--ghost {
+  background: transparent;
+  color: var(--fs-cyan);
+  border-color: var(--fs-line-strong);
+}
+.fs-btn--ghost:hover:not(:disabled) {
+  background: var(--fs-cyan-soft);
+  border-color: var(--fs-cyan);
+  box-shadow: none;
+  color: #8ce7f2;
+}
+.fs-btn--sm {
+  min-height: 36px;
+  padding: 6px 16px;
+  font-size: var(--fs-t12);
+}
+
+/* —— 状态徽章 —— */
+.fs-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--fs-mono);
+  font-size: var(--fs-t11);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid;
+  white-space: nowrap;
+}
+.fs-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.fs-badge--created { color: var(--fs-blue); border-color: rgba(91, 157, 255, 0.4); background: rgba(91, 157, 255, 0.08); }
+.fs-badge--running { color: var(--fs-amber); border-color: rgba(255, 178, 36, 0.4); background: var(--fs-amber-soft); }
+.fs-badge--completed { color: var(--fs-green); border-color: rgba(67, 221, 154, 0.4); background: var(--fs-green-soft); }
+.fs-badge--failed { color: var(--fs-red); border-color: rgba(255, 107, 107, 0.4); background: var(--fs-red-soft); }
+.fs-badge--running::before {
+  animation: fs-pulse 1.2s ease-in-out infinite;
+}
+@keyframes fs-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255, 178, 36, 0.5); }
+  50% { opacity: 0.5; box-shadow: 0 0 0 4px rgba(255, 178, 36, 0); }
+}
+
+/* ——  chips（topic / cutoff 选择） —— */
+.fs-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--fs-mono);
+  font-size: var(--fs-t12);
+  min-height: 36px;
+  padding: 6px 14px;
+  border: 1px solid var(--fs-line-strong);
+  border-radius: var(--fs-r-sm);
+  background: transparent;
+  color: var(--fs-muted);
+  cursor: pointer;
+  transition: all var(--fs-fast) ease-out;
+}
+.fs-chip:hover {
+  border-color: var(--fs-cyan);
+  color: var(--fs-cyan);
+  background: var(--fs-cyan-soft);
+}
+.fs-chip.is-active {
+  border-color: var(--fs-cyan);
+  color: #06222a;
+  background: var(--fs-cyan);
+  font-weight: 600;
+}
+
+/* —— 表单 —— */
+.fs-field {
+  margin-bottom: var(--fs-s3);
+  font-size: var(--fs-t13);
+}
+.fs-field > label {
+  display: block;
+  font-family: var(--fs-mono);
+  font-size: var(--fs-t11);
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--fs-muted);
+  margin-bottom: 8px;
+}
+.fs-field select,
+.fs-field input {
+  font-family: var(--fs-mono);
+  font-size: var(--fs-t13);
+  color: var(--fs-text);
+  background: var(--fs-bg-2);
+  border: 1px solid var(--fs-line-strong);
+  border-radius: var(--fs-r-sm);
+  padding: 10px 12px;
+  min-height: 44px;
+  min-width: 260px;
+  transition: border-color var(--fs-fast) ease-out, box-shadow var(--fs-fast) ease-out;
+  color-scheme: dark;
+}
+.fs-field select:hover,
+.fs-field input:hover:not(:disabled) {
+  border-color: var(--fs-cyan);
+}
+.fs-field select:focus,
+.fs-field input:focus {
+  outline: none;
+  border-color: var(--fs-cyan);
+  box-shadow: 0 0 0 3px rgba(69, 214, 232, 0.15);
+}
+.fs-field input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  border-style: dashed;
+}
+
+/* —— 提示 / 错误 / 待机 —— */
+.fs-notice {
+  margin-top: var(--fs-s3);
+  padding: 12px 16px;
+  border: 1px solid rgba(255, 178, 36, 0.35);
+  border-left: 3px solid var(--fs-amber);
+  border-radius: var(--fs-r-sm);
+  background: var(--fs-amber-soft);
+  color: #ffd489;
+  font-size: var(--fs-t13);
+  line-height: 1.7;
+}
+.fs-notice b { color: var(--fs-amber); }
+.fs-error {
+  border: 1px solid rgba(255, 107, 107, 0.4);
+  border-left: 3px solid var(--fs-red);
+  border-radius: var(--fs-r-sm);
+  background: var(--fs-red-soft);
+  color: #ff9c9c;
+  padding: 12px 16px;
+  font-size: var(--fs-t13);
+  line-height: 1.7;
+}
+.fs-pending {
+  border: 1px dashed var(--fs-line-strong);
+  border-radius: var(--fs-r-sm);
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent 0 10px,
+    rgba(126, 164, 219, 0.035) 10px 20px
+  );
+  color: var(--fs-muted);
+  padding: var(--fs-s4);
+  text-align: center;
+  font-size: var(--fs-t13);
+  line-height: 1.8;
+}
+
+/* —— 键值明细 —— */
+.fs-kv {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 8px 16px;
+  font-size: var(--fs-t13);
+  margin: 0;
+}
+.fs-kv dt {
+  font-family: var(--fs-mono);
+  font-size: var(--fs-t12);
+  color: var(--fs-faint);
+  letter-spacing: 0.04em;
+}
+.fs-kv dd {
+  font-family: var(--fs-mono);
+  font-size: var(--fs-t12);
+  color: var(--fs-text);
+  margin: 0;
+  word-break: break-all;
+}
+
+/* —— 工具类 —— */
+.fs-mono {
+  font-family: var(--fs-mono);
+  font-size: var(--fs-t12);
+  letter-spacing: 0.02em;
+}
+.fs-muted {
+  color: var(--fs-muted);
+  font-size: var(--fs-t13);
+}
+.fs-num {
+  font-family: var(--fs-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* —— 大数字统计 —— */
+.fs-stat {
+  font-family: var(--fs-display);
+  font-size: var(--fs-t46);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+}
+.fs-stat-label {
+  font-family: var(--fs-mono);
+  font-size: var(--fs-t11);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--fs-faint);
+  margin-top: 8px;
+}
+
+/* —— 概率量表（50% 基准刻度） —— */
+.fs-gauge-track {
+  position: relative;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--fs-bg-2);
+  border: 1px solid var(--fs-line);
+  overflow: visible;
+}
+.fs-gauge-fill {
+  position: absolute;
+  inset: 1px auto 1px 1px;
+  border-radius: 999px;
+  transition: width var(--fs-slow) var(--fs-ease);
+}
+.fs-gauge-mark {
+  position: absolute;
+  left: 50%;
+  top: -5px;
+  bottom: -5px;
+  width: 1px;
+  background: var(--fs-line-strong);
+}
+.fs-gauge-mark::after {
+  content: '50%';
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--fs-mono);
+  font-size: 10px;
+  color: var(--fs-faint);
+}
+
+/* —— LED 指示灯 —— */
+.fs-led {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex: none;
+}
+.fs-led--on {
+  background: var(--fs-green);
+  box-shadow: 0 0 8px rgba(67, 221, 154, 0.7);
+}
+.fs-led--off {
+  background: var(--fs-red);
+  box-shadow: 0 0 8px rgba(255, 107, 107, 0.5);
+}
+.fs-led--idle {
+  background: var(--fs-faint);
+}
+
+/* —— 空状态 —— */
+.fs-empty {
+  text-align: center;
+  padding: var(--fs-s5) var(--fs-s4);
+  border: 1px dashed var(--fs-line-strong);
+  border-radius: var(--fs-r-md);
+  color: var(--fs-muted);
+}
+.fs-empty-glyph {
+  font-family: var(--fs-mono);
+  font-size: var(--fs-t26);
+  color: var(--fs-faint);
+  letter-spacing: 0.3em;
+  margin-bottom: 10px;
+}
+
+/* —— 降级动效 —— */
+@media (prefers-reduced-motion: reduce) {
+  .fs-page > * {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+  .fs-shell *,
+  .fs-shell *::before,
+  .fs-shell *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* —— 响应式 —— */
+@media (max-width: 768px) {
+  .fs-title { font-size: var(--fs-t26); }
+  .fs-card { padding: var(--fs-s3); }
+  .fs-kv { grid-template-columns: 1fr; gap: 2px 0; }
+  .fs-kv dd { margin-bottom: 8px; }
+  .fs-stat { font-size: var(--fs-t34); }
+  .fs-field select,
+  .fs-field input { min-width: 0; width: 100%; }
+}

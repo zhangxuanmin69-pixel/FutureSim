@@ -1,0 +1,14 @@
+{
+  "name": "futuresim-context-validation",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "ContextBundle 候选 Schema 校验与预测输入/回测结果分离检查（成员 C）",
+  "scripts": {
+    "validate": "node validate.mjs"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}

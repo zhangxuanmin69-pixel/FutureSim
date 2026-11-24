@@ -1,0 +1,4482 @@
+[
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-artificial-intelligence-2025-09-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "Artificial_intelligence",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-09-01",
+    "cutoff_time": "2025-09-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-09-02",
+    "target_end": "2025-09-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-08-05T00:00:00Z",
+        "value": 10011,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-06T00:00:00Z",
+        "value": 10344,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-07T00:00:00Z",
+        "value": 9991,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-08T00:00:00Z",
+        "value": 10870,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-09T00:00:00Z",
+        "value": 8380,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-10T00:00:00Z",
+        "value": 8365,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-11T00:00:00Z",
+        "value": 10875,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-12T00:00:00Z",
+        "value": 11024,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-13T00:00:00Z",
+        "value": 10722,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-14T00:00:00Z",
+        "value": 10383,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-15T00:00:00Z",
+        "value": 9251,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-16T00:00:00Z",
+        "value": 7957,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-17T00:00:00Z",
+        "value": 8106,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-18T00:00:00Z",
+        "value": 10232,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-19T00:00:00Z",
+        "value": 10411,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-20T00:00:00Z",
+        "value": 10574,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-21T00:00:00Z",
+        "value": 11169,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-22T00:00:00Z",
+        "value": 9783,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-23T00:00:00Z",
+        "value": 7875,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-24T00:00:00Z",
+        "value": 8467,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-25T00:00:00Z",
+        "value": 11234,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-26T00:00:00Z",
+        "value": 9712,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-27T00:00:00Z",
+        "value": 9932,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-28T00:00:00Z",
+        "value": 10207,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-29T00:00:00Z",
+        "value": 9340,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-30T00:00:00Z",
+        "value": 8003,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-31T00:00:00Z",
+        "value": 8431,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-01T00:00:00Z",
+        "value": 9406,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-bitcoin-2025-09-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "Bitcoin",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-09-01",
+    "cutoff_time": "2025-09-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-09-02",
+    "target_end": "2025-09-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-08-05T00:00:00Z",
+        "value": 6371,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-06T00:00:00Z",
+        "value": 5739,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-07T00:00:00Z",
+        "value": 5741,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-08T00:00:00Z",
+        "value": 5751,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-09T00:00:00Z",
+        "value": 4705,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-10T00:00:00Z",
+        "value": 5365,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-11T00:00:00Z",
+        "value": 6026,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-12T00:00:00Z",
+        "value": 5651,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-13T00:00:00Z",
+        "value": 5869,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-14T00:00:00Z",
+        "value": 6286,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-15T00:00:00Z",
+        "value": 5537,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-16T00:00:00Z",
+        "value": 4939,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-17T00:00:00Z",
+        "value": 5823,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-18T00:00:00Z",
+        "value": 5268,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-19T00:00:00Z",
+        "value": 4820,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-20T00:00:00Z",
+        "value": 4564,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-21T00:00:00Z",
+        "value": 4609,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-22T00:00:00Z",
+        "value": 4639,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-23T00:00:00Z",
+        "value": 4252,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-24T00:00:00Z",
+        "value": 3909,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-25T00:00:00Z",
+        "value": 4626,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-26T00:00:00Z",
+        "value": 4465,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-27T00:00:00Z",
+        "value": 4482,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-28T00:00:00Z",
+        "value": 4508,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-29T00:00:00Z",
+        "value": 4292,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-30T00:00:00Z",
+        "value": 3859,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-31T00:00:00Z",
+        "value": 3723,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-01T00:00:00Z",
+        "value": 4037,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-chatgpt-2025-09-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "ChatGPT",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-09-01",
+    "cutoff_time": "2025-09-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-09-02",
+    "target_end": "2025-09-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-08-05T00:00:00Z",
+        "value": 138594,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-06T00:00:00Z",
+        "value": 140441,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-07T00:00:00Z",
+        "value": 141849,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-08T00:00:00Z",
+        "value": 136620,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-09T00:00:00Z",
+        "value": 128154,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-10T00:00:00Z",
+        "value": 132856,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-11T00:00:00Z",
+        "value": 142763,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-12T00:00:00Z",
+        "value": 139723,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-13T00:00:00Z",
+        "value": 154267,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-14T00:00:00Z",
+        "value": 174657,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-15T00:00:00Z",
+        "value": 151646,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-16T00:00:00Z",
+        "value": 114422,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-17T00:00:00Z",
+        "value": 112371,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-18T00:00:00Z",
+        "value": 144317,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-19T00:00:00Z",
+        "value": 148031,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-20T00:00:00Z",
+        "value": 149986,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-21T00:00:00Z",
+        "value": 148731,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-22T00:00:00Z",
+        "value": 140232,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-23T00:00:00Z",
+        "value": 113957,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-24T00:00:00Z",
+        "value": 113395,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-25T00:00:00Z",
+        "value": 146792,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-26T00:00:00Z",
+        "value": 143067,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-27T00:00:00Z",
+        "value": 142260,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-28T00:00:00Z",
+        "value": 146704,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-29T00:00:00Z",
+        "value": 126649,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-30T00:00:00Z",
+        "value": 109654,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-31T00:00:00Z",
+        "value": 99217,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-01T00:00:00Z",
+        "value": 115691,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-nvidia-2025-09-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "Nvidia",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-09-01",
+    "cutoff_time": "2025-09-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-09-02",
+    "target_end": "2025-09-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-08-05T00:00:00Z",
+        "value": 7028,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-06T00:00:00Z",
+        "value": 7351,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-07T00:00:00Z",
+        "value": 8234,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-08T00:00:00Z",
+        "value": 7926,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-09T00:00:00Z",
+        "value": 6494,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-10T00:00:00Z",
+        "value": 10249,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-11T00:00:00Z",
+        "value": 13329,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-12T00:00:00Z",
+        "value": 11050,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-13T00:00:00Z",
+        "value": 8209,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-14T00:00:00Z",
+        "value": 6949,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-15T00:00:00Z",
+        "value": 6151,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-16T00:00:00Z",
+        "value": 5061,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-17T00:00:00Z",
+        "value": 5643,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-18T00:00:00Z",
+        "value": 6332,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-19T00:00:00Z",
+        "value": 6539,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-20T00:00:00Z",
+        "value": 6359,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-21T00:00:00Z",
+        "value": 6220,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-22T00:00:00Z",
+        "value": 6958,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-23T00:00:00Z",
+        "value": 6797,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-24T00:00:00Z",
+        "value": 5532,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-25T00:00:00Z",
+        "value": 6831,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-26T00:00:00Z",
+        "value": 6724,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-27T00:00:00Z",
+        "value": 11197,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-28T00:00:00Z",
+        "value": 13701,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-29T00:00:00Z",
+        "value": 7288,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-30T00:00:00Z",
+        "value": 5697,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-31T00:00:00Z",
+        "value": 5339,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-01T00:00:00Z",
+        "value": 5506,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-tesla-inc.-2025-09-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "Tesla,_Inc.",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-09-01",
+    "cutoff_time": "2025-09-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-09-02",
+    "target_end": "2025-09-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-08-05T00:00:00Z",
+        "value": 5341,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-06T00:00:00Z",
+        "value": 4366,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-07T00:00:00Z",
+        "value": 4228,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-08T00:00:00Z",
+        "value": 4126,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-09T00:00:00Z",
+        "value": 3396,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-10T00:00:00Z",
+        "value": 3928,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-11T00:00:00Z",
+        "value": 4518,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-12T00:00:00Z",
+        "value": 4515,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-13T00:00:00Z",
+        "value": 4405,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-14T00:00:00Z",
+        "value": 4569,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-15T00:00:00Z",
+        "value": 3745,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-16T00:00:00Z",
+        "value": 3578,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-17T00:00:00Z",
+        "value": 3460,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-18T00:00:00Z",
+        "value": 3769,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-19T00:00:00Z",
+        "value": 3787,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-20T00:00:00Z",
+        "value": 5662,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-21T00:00:00Z",
+        "value": 4259,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-22T00:00:00Z",
+        "value": 3910,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-23T00:00:00Z",
+        "value": 4310,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-24T00:00:00Z",
+        "value": 4661,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-25T00:00:00Z",
+        "value": 4009,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-26T00:00:00Z",
+        "value": 3939,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-27T00:00:00Z",
+        "value": 3911,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-28T00:00:00Z",
+        "value": 3683,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-29T00:00:00Z",
+        "value": 3622,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-30T00:00:00Z",
+        "value": 3289,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-08-31T00:00:00Z",
+        "value": 3281,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-01T00:00:00Z",
+        "value": 3534,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-artificial-intelligence-2025-10-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "Artificial_intelligence",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-10-01",
+    "cutoff_time": "2025-10-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-10-02",
+    "target_end": "2025-10-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-09-04T00:00:00Z",
+        "value": 11417,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-05T00:00:00Z",
+        "value": 11312,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-06T00:00:00Z",
+        "value": 11340,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-07T00:00:00Z",
+        "value": 8725,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-08T00:00:00Z",
+        "value": 10887,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-09T00:00:00Z",
+        "value": 10974,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-10T00:00:00Z",
+        "value": 11699,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-11T00:00:00Z",
+        "value": 12069,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-12T00:00:00Z",
+        "value": 11765,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-13T00:00:00Z",
+        "value": 9787,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-14T00:00:00Z",
+        "value": 10634,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-15T00:00:00Z",
+        "value": 12918,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-16T00:00:00Z",
+        "value": 16705,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-17T00:00:00Z",
+        "value": 13938,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-18T00:00:00Z",
+        "value": 12527,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-19T00:00:00Z",
+        "value": 11051,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-20T00:00:00Z",
+        "value": 9340,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-21T00:00:00Z",
+        "value": 9286,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-22T00:00:00Z",
+        "value": 11589,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-23T00:00:00Z",
+        "value": 11835,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-24T00:00:00Z",
+        "value": 11758,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-25T00:00:00Z",
+        "value": 11204,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-26T00:00:00Z",
+        "value": 10108,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-27T00:00:00Z",
+        "value": 8428,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-28T00:00:00Z",
+        "value": 8882,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-29T00:00:00Z",
+        "value": 11179,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-30T00:00:00Z",
+        "value": 11190,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-01T00:00:00Z",
+        "value": 13038,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-bitcoin-2025-10-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "Bitcoin",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-10-01",
+    "cutoff_time": "2025-10-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-10-02",
+    "target_end": "2025-10-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-09-04T00:00:00Z",
+        "value": 4416,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-05T00:00:00Z",
+        "value": 4114,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-06T00:00:00Z",
+        "value": 3590,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-07T00:00:00Z",
+        "value": 3926,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-08T00:00:00Z",
+        "value": 4254,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-09T00:00:00Z",
+        "value": 4192,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-10T00:00:00Z",
+        "value": 4175,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-11T00:00:00Z",
+        "value": 3664,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-12T00:00:00Z",
+        "value": 3830,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-13T00:00:00Z",
+        "value": 3355,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-14T00:00:00Z",
+        "value": 3446,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-15T00:00:00Z",
+        "value": 3882,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-16T00:00:00Z",
+        "value": 4357,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-17T00:00:00Z",
+        "value": 4622,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-18T00:00:00Z",
+        "value": 4275,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-19T00:00:00Z",
+        "value": 3971,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-20T00:00:00Z",
+        "value": 4016,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-21T00:00:00Z",
+        "value": 3726,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-22T00:00:00Z",
+        "value": 4557,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-23T00:00:00Z",
+        "value": 4118,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-24T00:00:00Z",
+        "value": 4146,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-25T00:00:00Z",
+        "value": 4397,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-26T00:00:00Z",
+        "value": 3934,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-27T00:00:00Z",
+        "value": 3203,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-28T00:00:00Z",
+        "value": 3395,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-29T00:00:00Z",
+        "value": 3918,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-30T00:00:00Z",
+        "value": 4606,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-01T00:00:00Z",
+        "value": 4156,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-chatgpt-2025-10-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "ChatGPT",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-10-01",
+    "cutoff_time": "2025-10-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-10-02",
+    "target_end": "2025-10-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-09-04T00:00:00Z",
+        "value": 149790,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-05T00:00:00Z",
+        "value": 142730,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-06T00:00:00Z",
+        "value": 113009,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-07T00:00:00Z",
+        "value": 121479,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-08T00:00:00Z",
+        "value": 163467,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-09T00:00:00Z",
+        "value": 165059,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-10T00:00:00Z",
+        "value": 167410,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-11T00:00:00Z",
+        "value": 165103,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-12T00:00:00Z",
+        "value": 151939,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-13T00:00:00Z",
+        "value": 122146,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-14T00:00:00Z",
+        "value": 124082,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-15T00:00:00Z",
+        "value": 164326,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-16T00:00:00Z",
+        "value": 169258,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-17T00:00:00Z",
+        "value": 166567,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-18T00:00:00Z",
+        "value": 164106,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-19T00:00:00Z",
+        "value": 146916,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-20T00:00:00Z",
+        "value": 113742,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-21T00:00:00Z",
+        "value": 122197,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-22T00:00:00Z",
+        "value": 162964,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-23T00:00:00Z",
+        "value": 162555,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-24T00:00:00Z",
+        "value": 163513,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-25T00:00:00Z",
+        "value": 157882,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-26T00:00:00Z",
+        "value": 141633,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-27T00:00:00Z",
+        "value": 104960,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-28T00:00:00Z",
+        "value": 114449,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-29T00:00:00Z",
+        "value": 148199,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-30T00:00:00Z",
+        "value": 149530,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-01T00:00:00Z",
+        "value": 145383,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-nvidia-2025-10-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "Nvidia",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-10-01",
+    "cutoff_time": "2025-10-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-10-02",
+    "target_end": "2025-10-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-09-04T00:00:00Z",
+        "value": 5505,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-05T00:00:00Z",
+        "value": 6425,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-06T00:00:00Z",
+        "value": 5464,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-07T00:00:00Z",
+        "value": 5115,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-08T00:00:00Z",
+        "value": 5269,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-09T00:00:00Z",
+        "value": 5098,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-10T00:00:00Z",
+        "value": 5267,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-11T00:00:00Z",
+        "value": 4729,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-12T00:00:00Z",
+        "value": 4574,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-13T00:00:00Z",
+        "value": 4028,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-14T00:00:00Z",
+        "value": 4156,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-15T00:00:00Z",
+        "value": 7394,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-16T00:00:00Z",
+        "value": 7144,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-17T00:00:00Z",
+        "value": 12184,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-18T00:00:00Z",
+        "value": 14962,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-19T00:00:00Z",
+        "value": 9978,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-20T00:00:00Z",
+        "value": 7453,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-21T00:00:00Z",
+        "value": 6319,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-22T00:00:00Z",
+        "value": 8692,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-23T00:00:00Z",
+        "value": 9934,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-24T00:00:00Z",
+        "value": 7396,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-25T00:00:00Z",
+        "value": 6574,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-26T00:00:00Z",
+        "value": 6550,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-27T00:00:00Z",
+        "value": 5841,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-28T00:00:00Z",
+        "value": 5507,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-29T00:00:00Z",
+        "value": 6160,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-30T00:00:00Z",
+        "value": 6320,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-01T00:00:00Z",
+        "value": 7240,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-tesla-inc.-2025-10-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "Tesla,_Inc.",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-10-01",
+    "cutoff_time": "2025-10-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-10-02",
+    "target_end": "2025-10-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-09-04T00:00:00Z",
+        "value": 3613,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-05T00:00:00Z",
+        "value": 6502,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-06T00:00:00Z",
+        "value": 5544,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-07T00:00:00Z",
+        "value": 4369,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-08T00:00:00Z",
+        "value": 4703,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-09T00:00:00Z",
+        "value": 5137,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-10T00:00:00Z",
+        "value": 5057,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-11T00:00:00Z",
+        "value": 4100,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-12T00:00:00Z",
+        "value": 3945,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-13T00:00:00Z",
+        "value": 3145,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-14T00:00:00Z",
+        "value": 3424,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-15T00:00:00Z",
+        "value": 4707,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-16T00:00:00Z",
+        "value": 4433,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-17T00:00:00Z",
+        "value": 4672,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-18T00:00:00Z",
+        "value": 5661,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-19T00:00:00Z",
+        "value": 5344,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-20T00:00:00Z",
+        "value": 4800,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-21T00:00:00Z",
+        "value": 4330,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-22T00:00:00Z",
+        "value": 4849,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-23T00:00:00Z",
+        "value": 4604,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-24T00:00:00Z",
+        "value": 4343,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-25T00:00:00Z",
+        "value": 4382,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-26T00:00:00Z",
+        "value": 4033,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-27T00:00:00Z",
+        "value": 3661,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-28T00:00:00Z",
+        "value": 3547,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-29T00:00:00Z",
+        "value": 3900,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-09-30T00:00:00Z",
+        "value": 3696,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-01T00:00:00Z",
+        "value": 3814,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-artificial-intelligence-2025-11-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "Artificial_intelligence",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-11-01",
+    "cutoff_time": "2025-11-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-11-02",
+    "target_end": "2025-11-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-10-05T00:00:00Z",
+        "value": 8906,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-06T00:00:00Z",
+        "value": 11132,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-07T00:00:00Z",
+        "value": 11848,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-08T00:00:00Z",
+        "value": 11985,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-09T00:00:00Z",
+        "value": 12277,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-10T00:00:00Z",
+        "value": 10533,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-11T00:00:00Z",
+        "value": 8859,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-12T00:00:00Z",
+        "value": 9022,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-13T00:00:00Z",
+        "value": 11909,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-14T00:00:00Z",
+        "value": 13253,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-15T00:00:00Z",
+        "value": 12197,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-16T00:00:00Z",
+        "value": 12449,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-17T00:00:00Z",
+        "value": 10409,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-18T00:00:00Z",
+        "value": 8411,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-19T00:00:00Z",
+        "value": 8570,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-20T00:00:00Z",
+        "value": 10805,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-21T00:00:00Z",
+        "value": 11153,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-22T00:00:00Z",
+        "value": 12608,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-23T00:00:00Z",
+        "value": 12147,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-24T00:00:00Z",
+        "value": 11329,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-25T00:00:00Z",
+        "value": 9484,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-26T00:00:00Z",
+        "value": 10203,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-27T00:00:00Z",
+        "value": 14033,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-28T00:00:00Z",
+        "value": 13876,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-29T00:00:00Z",
+        "value": 13434,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-30T00:00:00Z",
+        "value": 12353,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-31T00:00:00Z",
+        "value": 11205,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-01T00:00:00Z",
+        "value": 8578,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-bitcoin-2025-11-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "Bitcoin",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-11-01",
+    "cutoff_time": "2025-11-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-11-02",
+    "target_end": "2025-11-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-10-05T00:00:00Z",
+        "value": 5530,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-06T00:00:00Z",
+        "value": 5834,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-07T00:00:00Z",
+        "value": 5274,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-08T00:00:00Z",
+        "value": 5022,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-09T00:00:00Z",
+        "value": 5022,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-10T00:00:00Z",
+        "value": 4553,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-11T00:00:00Z",
+        "value": 7549,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-12T00:00:00Z",
+        "value": 7317,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-13T00:00:00Z",
+        "value": 6236,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-14T00:00:00Z",
+        "value": 6524,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-15T00:00:00Z",
+        "value": 5890,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-16T00:00:00Z",
+        "value": 5636,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-17T00:00:00Z",
+        "value": 5402,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-18T00:00:00Z",
+        "value": 4655,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-19T00:00:00Z",
+        "value": 4349,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-20T00:00:00Z",
+        "value": 4747,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-21T00:00:00Z",
+        "value": 5910,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-22T00:00:00Z",
+        "value": 4880,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-23T00:00:00Z",
+        "value": 5088,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-24T00:00:00Z",
+        "value": 4922,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-25T00:00:00Z",
+        "value": 4260,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-26T00:00:00Z",
+        "value": 4321,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-27T00:00:00Z",
+        "value": 4698,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-28T00:00:00Z",
+        "value": 4550,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-29T00:00:00Z",
+        "value": 4610,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-30T00:00:00Z",
+        "value": 4360,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-31T00:00:00Z",
+        "value": 4901,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-01T00:00:00Z",
+        "value": 4917,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-chatgpt-2025-11-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "ChatGPT",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-11-01",
+    "cutoff_time": "2025-11-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-11-02",
+    "target_end": "2025-11-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-10-05T00:00:00Z",
+        "value": 116294,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-06T00:00:00Z",
+        "value": 152433,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-07T00:00:00Z",
+        "value": 150022,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-08T00:00:00Z",
+        "value": 154703,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-09T00:00:00Z",
+        "value": 149867,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-10T00:00:00Z",
+        "value": 129962,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-11T00:00:00Z",
+        "value": 104437,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-12T00:00:00Z",
+        "value": 112663,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-13T00:00:00Z",
+        "value": 144194,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-14T00:00:00Z",
+        "value": 154461,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-15T00:00:00Z",
+        "value": 152225,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-16T00:00:00Z",
+        "value": 151856,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-17T00:00:00Z",
+        "value": 137287,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-18T00:00:00Z",
+        "value": 110304,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-19T00:00:00Z",
+        "value": 117198,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-20T00:00:00Z",
+        "value": 154338,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-21T00:00:00Z",
+        "value": 274968,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-22T00:00:00Z",
+        "value": 211070,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-23T00:00:00Z",
+        "value": 144135,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-24T00:00:00Z",
+        "value": 129772,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-25T00:00:00Z",
+        "value": 101553,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-26T00:00:00Z",
+        "value": 89392,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-27T00:00:00Z",
+        "value": 103883,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-28T00:00:00Z",
+        "value": 105827,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-29T00:00:00Z",
+        "value": 107460,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-30T00:00:00Z",
+        "value": 119528,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-31T00:00:00Z",
+        "value": 115204,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-01T00:00:00Z",
+        "value": 100425,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-nvidia-2025-11-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "Nvidia",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-11-01",
+    "cutoff_time": "2025-11-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-11-02",
+    "target_end": "2025-11-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-10-05T00:00:00Z",
+        "value": 5751,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-06T00:00:00Z",
+        "value": 7522,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-07T00:00:00Z",
+        "value": 7286,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-08T00:00:00Z",
+        "value": 8642,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-09T00:00:00Z",
+        "value": 9141,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-10T00:00:00Z",
+        "value": 8270,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-11T00:00:00Z",
+        "value": 6828,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-12T00:00:00Z",
+        "value": 6288,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-13T00:00:00Z",
+        "value": 7539,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-14T00:00:00Z",
+        "value": 8596,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-15T00:00:00Z",
+        "value": 8172,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-16T00:00:00Z",
+        "value": 7580,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-17T00:00:00Z",
+        "value": 7905,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-18T00:00:00Z",
+        "value": 6832,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-19T00:00:00Z",
+        "value": 7444,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-20T00:00:00Z",
+        "value": 7814,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-21T00:00:00Z",
+        "value": 7109,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-22T00:00:00Z",
+        "value": 7130,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-23T00:00:00Z",
+        "value": 7101,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-24T00:00:00Z",
+        "value": 6482,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-25T00:00:00Z",
+        "value": 5586,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-26T00:00:00Z",
+        "value": 5580,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-27T00:00:00Z",
+        "value": 6492,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-28T00:00:00Z",
+        "value": 10516,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-29T00:00:00Z",
+        "value": 44485,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-30T00:00:00Z",
+        "value": 43958,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-31T00:00:00Z",
+        "value": 28648,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-01T00:00:00Z",
+        "value": 21015,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-tesla-inc.-2025-11-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "Tesla,_Inc.",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-11-01",
+    "cutoff_time": "2025-11-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-11-02",
+    "target_end": "2025-11-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-10-05T00:00:00Z",
+        "value": 3599,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-06T00:00:00Z",
+        "value": 4165,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-07T00:00:00Z",
+        "value": 4320,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-08T00:00:00Z",
+        "value": 4144,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-09T00:00:00Z",
+        "value": 4240,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-10T00:00:00Z",
+        "value": 4572,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-11T00:00:00Z",
+        "value": 4155,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-12T00:00:00Z",
+        "value": 3707,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-13T00:00:00Z",
+        "value": 5570,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-14T00:00:00Z",
+        "value": 4811,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-15T00:00:00Z",
+        "value": 4491,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-16T00:00:00Z",
+        "value": 3520,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-17T00:00:00Z",
+        "value": 3297,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-18T00:00:00Z",
+        "value": 2925,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-19T00:00:00Z",
+        "value": 3219,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-20T00:00:00Z",
+        "value": 3523,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-21T00:00:00Z",
+        "value": 3519,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-22T00:00:00Z",
+        "value": 4152,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-23T00:00:00Z",
+        "value": 4294,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-24T00:00:00Z",
+        "value": 3549,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-25T00:00:00Z",
+        "value": 3050,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-26T00:00:00Z",
+        "value": 3350,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-27T00:00:00Z",
+        "value": 4152,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-28T00:00:00Z",
+        "value": 4752,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-29T00:00:00Z",
+        "value": 4219,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-30T00:00:00Z",
+        "value": 4091,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-10-31T00:00:00Z",
+        "value": 4430,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-01T00:00:00Z",
+        "value": 3073,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-artificial-intelligence-2025-12-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "Artificial_intelligence",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-12-01",
+    "cutoff_time": "2025-12-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-12-02",
+    "target_end": "2025-12-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-11-04T00:00:00Z",
+        "value": 11485,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-05T00:00:00Z",
+        "value": 11982,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-06T00:00:00Z",
+        "value": 12549,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-07T00:00:00Z",
+        "value": 11538,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-08T00:00:00Z",
+        "value": 9176,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-09T00:00:00Z",
+        "value": 8635,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-10T00:00:00Z",
+        "value": 11201,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-11T00:00:00Z",
+        "value": 11154,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-12T00:00:00Z",
+        "value": 11732,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-13T00:00:00Z",
+        "value": 12105,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-14T00:00:00Z",
+        "value": 11075,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-15T00:00:00Z",
+        "value": 9238,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-16T00:00:00Z",
+        "value": 9392,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-17T00:00:00Z",
+        "value": 11920,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-18T00:00:00Z",
+        "value": 14492,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "value": 12021,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-20T00:00:00Z",
+        "value": 12884,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-21T00:00:00Z",
+        "value": 11253,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-22T00:00:00Z",
+        "value": 8763,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-23T00:00:00Z",
+        "value": 9073,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-24T00:00:00Z",
+        "value": 11699,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-25T00:00:00Z",
+        "value": 11650,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-26T00:00:00Z",
+        "value": 11253,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-27T00:00:00Z",
+        "value": 10597,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-28T00:00:00Z",
+        "value": 9213,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-29T00:00:00Z",
+        "value": 8103,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-30T00:00:00Z",
+        "value": 9114,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-12-01T00:00:00Z",
+        "value": 11798,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-bitcoin-2025-12-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "Bitcoin",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-12-01",
+    "cutoff_time": "2025-12-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-12-02",
+    "target_end": "2025-12-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-11-04T00:00:00Z",
+        "value": 5034,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-05T00:00:00Z",
+        "value": 5367,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-06T00:00:00Z",
+        "value": 4673,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-07T00:00:00Z",
+        "value": 4277,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-08T00:00:00Z",
+        "value": 3787,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-09T00:00:00Z",
+        "value": 3672,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-10T00:00:00Z",
+        "value": 4123,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-11T00:00:00Z",
+        "value": 5100,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-12T00:00:00Z",
+        "value": 4986,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-13T00:00:00Z",
+        "value": 4793,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-14T00:00:00Z",
+        "value": 5593,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-15T00:00:00Z",
+        "value": 4443,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-16T00:00:00Z",
+        "value": 4373,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-17T00:00:00Z",
+        "value": 5529,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-18T00:00:00Z",
+        "value": 6684,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "value": 5975,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-20T00:00:00Z",
+        "value": 6107,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-21T00:00:00Z",
+        "value": 7675,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-22T00:00:00Z",
+        "value": 6011,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-23T00:00:00Z",
+        "value": 5050,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-24T00:00:00Z",
+        "value": 5713,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-25T00:00:00Z",
+        "value": 5580,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-26T00:00:00Z",
+        "value": 5068,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-27T00:00:00Z",
+        "value": 4249,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-28T00:00:00Z",
+        "value": 4332,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-29T00:00:00Z",
+        "value": 3609,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-30T00:00:00Z",
+        "value": 3642,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-12-01T00:00:00Z",
+        "value": 5697,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-chatgpt-2025-12-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "ChatGPT",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-12-01",
+    "cutoff_time": "2025-12-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-12-02",
+    "target_end": "2025-12-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-11-04T00:00:00Z",
+        "value": 153518,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-05T00:00:00Z",
+        "value": 141663,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-06T00:00:00Z",
+        "value": 136210,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-07T00:00:00Z",
+        "value": 124983,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-08T00:00:00Z",
+        "value": 97634,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-09T00:00:00Z",
+        "value": 101758,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-10T00:00:00Z",
+        "value": 136381,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-11T00:00:00Z",
+        "value": 133585,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-12T00:00:00Z",
+        "value": 137463,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-13T00:00:00Z",
+        "value": 133885,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-14T00:00:00Z",
+        "value": 124017,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-15T00:00:00Z",
+        "value": 92968,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-16T00:00:00Z",
+        "value": 99099,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-17T00:00:00Z",
+        "value": 128993,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-18T00:00:00Z",
+        "value": 306406,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "value": 122391,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-20T00:00:00Z",
+        "value": 125935,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-21T00:00:00Z",
+        "value": 108462,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-22T00:00:00Z",
+        "value": 86468,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-23T00:00:00Z",
+        "value": 90991,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-24T00:00:00Z",
+        "value": 116229,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-25T00:00:00Z",
+        "value": 112102,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-26T00:00:00Z",
+        "value": 105938,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-27T00:00:00Z",
+        "value": 95242,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-28T00:00:00Z",
+        "value": 89907,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-29T00:00:00Z",
+        "value": 84755,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-30T00:00:00Z",
+        "value": 94676,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-12-01T00:00:00Z",
+        "value": 122330,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-nvidia-2025-12-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "Nvidia",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-12-01",
+    "cutoff_time": "2025-12-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-12-02",
+    "target_end": "2025-12-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-11-04T00:00:00Z",
+        "value": 15432,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-05T00:00:00Z",
+        "value": 12930,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-06T00:00:00Z",
+        "value": 13614,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-07T00:00:00Z",
+        "value": 12563,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-08T00:00:00Z",
+        "value": 9830,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-09T00:00:00Z",
+        "value": 9403,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-10T00:00:00Z",
+        "value": 9674,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-11T00:00:00Z",
+        "value": 10270,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-12T00:00:00Z",
+        "value": 10151,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-13T00:00:00Z",
+        "value": 9226,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-14T00:00:00Z",
+        "value": 8816,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-15T00:00:00Z",
+        "value": 7494,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-16T00:00:00Z",
+        "value": 7708,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-17T00:00:00Z",
+        "value": 11590,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-18T00:00:00Z",
+        "value": 14014,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "value": 25435,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-20T00:00:00Z",
+        "value": 34307,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-21T00:00:00Z",
+        "value": 16591,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-22T00:00:00Z",
+        "value": 11153,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-23T00:00:00Z",
+        "value": 9936,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-24T00:00:00Z",
+        "value": 10254,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-25T00:00:00Z",
+        "value": 11290,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-26T00:00:00Z",
+        "value": 10536,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-27T00:00:00Z",
+        "value": 9934,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-28T00:00:00Z",
+        "value": 8689,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-29T00:00:00Z",
+        "value": 7682,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-30T00:00:00Z",
+        "value": 7360,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-12-01T00:00:00Z",
+        "value": 7831,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  },
+  {
+    "schema_version": "1.0.0-draft",
+    "experiment_id": "wiki-tesla-inc.-2025-12-01",
+    "dataset_version": "futuresim-wikipedia-pageviews-v0.1",
+    "dataset_sha256": "ed87341cd1b5148bd9ec35c5d2738e877f7490340193300ab951a9cf947314e1",
+    "topic": "Tesla,_Inc.",
+    "metric": "daily_pageviews",
+    "unit": "views",
+    "cutoff_date": "2025-12-01",
+    "cutoff_time": "2025-12-01",
+    "cutoff_granularity": "day",
+    "cutoff_semantics": "historical_observation_date_inclusive",
+    "horizon_days": 7,
+    "target_start": "2025-12-02",
+    "target_end": "2025-12-08",
+    "target_definition": "next7_views_sum > last7_views_sum",
+    "history": [
+      {
+        "timestamp": "2025-11-04T00:00:00Z",
+        "value": 4377,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-05T00:00:00Z",
+        "value": 4436,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-06T00:00:00Z",
+        "value": 5892,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-07T00:00:00Z",
+        "value": 11597,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-08T00:00:00Z",
+        "value": 6708,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-09T00:00:00Z",
+        "value": 4786,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-10T00:00:00Z",
+        "value": 4517,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-11T00:00:00Z",
+        "value": 4399,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-12T00:00:00Z",
+        "value": 4066,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-13T00:00:00Z",
+        "value": 3924,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-14T00:00:00Z",
+        "value": 3742,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-15T00:00:00Z",
+        "value": 3339,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-16T00:00:00Z",
+        "value": 3438,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-17T00:00:00Z",
+        "value": 3798,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-18T00:00:00Z",
+        "value": 3871,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "value": 3932,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-20T00:00:00Z",
+        "value": 3959,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-21T00:00:00Z",
+        "value": 3677,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-22T00:00:00Z",
+        "value": 3395,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-23T00:00:00Z",
+        "value": 3456,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-24T00:00:00Z",
+        "value": 3527,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-25T00:00:00Z",
+        "value": 3533,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-26T00:00:00Z",
+        "value": 3815,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-27T00:00:00Z",
+        "value": 3422,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-28T00:00:00Z",
+        "value": 3289,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-29T00:00:00Z",
+        "value": 2821,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-11-30T00:00:00Z",
+        "value": 3309,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      },
+      {
+        "timestamp": "2025-12-01T00:00:00Z",
+        "value": 4239,
+        "source": "Wikimedia Pageviews API",
+        "available_at": null,
+        "published_at": null
+      }
+    ],
+    "provenance": {
+      "project": "en.wikipedia.org",
+      "source": "Wikimedia Pageviews API",
+      "source_documentation": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/examples/page-metrics.html",
+      "fetched_at_utc": "2026-11-24T12:51:50.843797+00:00",
+      "record_available_at_verified": false,
+      "published_at_provided": false,
+      "note": "Historical observation dates are known; original publication/availability timestamps are unknown."
+    }
+  }
+]

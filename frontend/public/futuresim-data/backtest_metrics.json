@@ -1,0 +1,15 @@
+{
+  "n_predictions": 255,
+  "date_min": "2025-01-01",
+  "date_max": "2025-12-17",
+  "model_scores": {
+    "historical_rate": {
+      "accuracy": 0.541176,
+      "brier_score": 0.249504
+    },
+    "logistic_regression": {
+      "accuracy": 0.552941,
+      "brier_score": 0.250053
+    }
+  }
+}

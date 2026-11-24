@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://futuresim.local/contracts/context_bundle.proposed.schema.json",
+  "title": "FutureSim ContextBundle (A proposal for B/C)",
+  "description": "Retrospective daily Wikipedia pageviews, cutoff day inclusive. Data published/available timestamps are unknown, never guessed. No future labels.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "experiment_id",
+    "dataset_version",
+    "dataset_sha256",
+    "topic",
+    "metric",
+    "unit",
+    "cutoff_date",
+    "cutoff_time",
+    "cutoff_granularity",
+    "cutoff_semantics",
+    "horizon_days",
+    "target_start",
+    "target_end",
+    "target_definition",
+    "history",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0-draft"
+    },
+    "experiment_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dataset_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dataset_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "topic": {
+      "type": "string",
+      "minLength": 1
+    },
+    "metric": {
+      "const": "daily_pageviews"
+    },
+    "unit": {
+      "const": "views"
+    },
+    "cutoff_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "cutoff_time": {
+      "type": "string",
+      "format": "date",
+      "description": "Date only. The user-defined observation cutoff day, not proven real-world time of availability."
+    },
+    "cutoff_granularity": {
+      "const": "day"
+    },
+    "cutoff_semantics": {
+      "const": "historical_observation_date_inclusive"
+    },
+    "horizon_days": {
+      "const": 7
+    },
+    "target_start": {
+      "type": "string",
+      "format": "date"
+    },
+    "target_end": {
+      "type": "string",
+      "format": "date"
+    },
+    "target_definition": {
+      "const": "next7_views_sum > last7_views_sum"
+    },
+    "history": {
+      "type": "array",
+      "minItems": 28,
+      "maxItems": 28,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "timestamp",
+          "value",
+          "source",
+          "available_at",
+          "published_at"
+        ],
+        "properties": {
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Observation day at 00:00Z, not publication time"
+          },
+          "value": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "available_at": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "null: no verified availability timestamp"
+          },
+          "published_at": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "null: source does not expose a publication timestamp"
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "project",
+        "source",
+        "source_documentation",
+        "fetched_at_utc",
+        "record_available_at_verified",
+        "published_at_provided",
+        "note"
+      ],
+      "properties": {
+        "project": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_documentation": {
+          "type": "string",
+          "format": "uri"
+        },
+        "fetched_at_utc": {
+          "type": "string",
+          "format": "date-time",
+          "description": "API retrieval time in 2026, never substitute for available_at"
+        },
+        "record_available_at_verified": {
+          "const": false
+        },
+        "published_at_provided": {
+          "const": false
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

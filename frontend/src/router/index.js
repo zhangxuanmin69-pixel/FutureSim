@@ -5,6 +5,12 @@ import SimulationView from '../views/SimulationView.vue'
 import SimulationRunView from '../views/SimulationRunView.vue'
 import ReportView from '../views/ReportView.vue'
 import InteractionView from '../views/InteractionView.vue'
+import FutureSimLayout from '../views/futuresim/FutureSimLayout.vue'
+import FsExperimentList from '../views/futuresim/ExperimentList.vue'
+import FsExperimentCreate from '../views/futuresim/ExperimentCreate.vue'
+import FsPredictionResult from '../views/futuresim/PredictionResult.vue'
+import FsAgentSimulation from '../views/futuresim/AgentSimulation.vue'
+import FsBacktestHistory from '../views/futuresim/BacktestHistory.vue'
 
 const routes = [
   {
@@ -41,6 +47,18 @@ const routes = [
     name: 'Interaction',
     component: InteractionView,
     props: true
+  },
+  {
+    path: '/futuresim',
+    component: FutureSimLayout,
+    children: [
+      { path: '', redirect: '/futuresim/experiments' },
+      { path: 'experiments', name: 'FsExperiments', component: FsExperimentList },
+      { path: 'create', name: 'FsCreate', component: FsExperimentCreate },
+      { path: 'prediction/:experimentId?', name: 'FsPrediction', component: FsPredictionResult },
+      { path: 'simulation/:experimentId?', name: 'FsSimulation', component: FsAgentSimulation },
+      { path: 'backtest', name: 'FsBacktest', component: FsBacktestHistory }
+    ]
   }
 ]
 
